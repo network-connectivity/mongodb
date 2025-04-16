@@ -6,16 +6,15 @@ The SRV URI connection scheme has the following form:
 ```sh
 mongodb+srv://[username:password@]host[/[defaultauthdb][?options]]
 ```
-
 example:
 ```sh
-mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/<dbname>?w=majority
+mongodb+srv://user1:pwduser1@cluster0.xxxxx.mongodb.net/<dbname>?w=majority
 ```
 
 ## 2. Resolve a DNS SRV record
 
 ```sh
-nslookup -debug -q=SRV  _mongodb._tcp.<DNS SRV name>
+nslookup -debug -q=SRV  _mongodb._tcp.<host>
 ```
 
 example:
